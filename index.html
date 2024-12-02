@@ -36,14 +36,18 @@
 
         .button-container {
             display: flex;
-            justify-content: space-between;
-            margin: 0;
+            width: 100%; /* Ensures buttons span the full width */
+        }
+
+        .button-container a {
+            flex: 1; /* Ensures each button takes up equal width */
+            text-decoration: none; /* Removes underline from links */
         }
 
         .button-container button {
-            width: 16.66%; /* Each button takes up 1/6th of the screen */
+            width: 100%; /* Ensures buttons stretch to fill their container */
             padding: 30px 0;
-            font-size: 1.5em;
+            font-size: 1.5em; /* Consistent font size */
             background-color: white;
             border: 2px solid black;
             color: black;
@@ -53,7 +57,6 @@
             font-family: 'Roboto', sans-serif;
             letter-spacing: 2px;
             text-align: center;
-            border-radius: 0;
         }
 
         .button-container button:hover {
